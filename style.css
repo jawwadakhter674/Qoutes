@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Dancing Script', cursive;
+    background-color: rgb(38, 65, 65);
+}
+
+.container {
+    height: 55vh;
+    width: 600px;
+    background-color: skyblue;
+    /* margin: auto; */
+    margin-top: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:20px;
+}
+
+.box {
+    height: 80%;
+    width: 70%;
+    background-color: #fff;
+    box-shadow: -6px 11px 11px -5px rgba(113, 109, 109, 0.75);
+    -webkit-box-shadow: -6px 11px 11px -5px rgba(113, 109, 109, 0.75);
+    -moz-box-shadow: -6px 11px 11px -5px rgba(113, 109, 109, 0.75);
+    position: relative;
+}
+
+.link{
+    height: 80px;
+    width: 120px;
+    background-color: rgb(160, 154, 154);
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%);
+clip-path: polygon(0 0, 100% 0, 100% 100%);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    /* align-items: flex-start ; */
+}
+
+.link >a{
+  margin-top: 10px;
+  margin-left: 70px;
+
+}
+.link a i{
+    color: rgb(0, 0, 255);
+    font-size: 35px;
+    animation: rotate 3s linear infinite;
+    transition: 3s ease-in-out;
+   
+
+
+  
+}
+
+
+
+
+
+.qoute{
+    width: 350px;
+    height: 60%;
+    /* display: flex; */
+    margin-top: 50px;
+    padding: 0px 20px 0px 20px;
+    position: relative;
+   
+}
+
+.qoute i{
+    font-size: 25px;
+    margin-bottom: 5px;
+    color: rgb(126, 126, 126);
+}
+
+.qoute p{
+    width: 100%;
+    font-size: 18px
+}
+
+
+.qoute a{
+    position: absolute;
+    right: 0;
+    font-size: 25px;
+    text-decoration: none;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    border: none;
+    background-color: rgb(28, 165, 219);
+    color: white;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.btn:hover {
+    background-color: rgb(27, 134, 177);
+    letter-spacing: 2px;
+}
+
+
+
+@keyframes rotate{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
+
+
+
+
+
+@media(max-width:600px) {
+    .container {
+        width: 100%;
+        height: 70vh;
+        /* margin: auto; */
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .box {
+        height: 80%;
+        width: 95%;
+        background-color: #fff;
+    }
+    .qoute a{
+        margin-right: 10px;
+    }
+    
+.qoute{
+    width: 100%;
+    height: 70%;
+    /* display: flex; */
+    margin-top: 90px;
+    padding: 0px 20px 0px 20px;
+   
+}
+}
+
+
+
+
+
+
